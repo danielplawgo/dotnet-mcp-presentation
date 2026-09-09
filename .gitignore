@@ -1,0 +1,17 @@
+node_modules/
+.npm-cache/
+.playwright-browsers/
+.qa/
+.tmp/
+.slidev/
+dist/
+dist-slides/
+mcp-dotnet-talk.pdf
+**/bin/
+**/obj/
+.idea/
+.vscode/
+.vs/
+TestResults/
+*.user
+*.suo

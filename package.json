@@ -1,0 +1,17 @@
+{
+  "name": "mcp-dotnet-talk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export --output mcp-dotnet-talk.pdf",
+    "export:png": "slidev export --format png --output dist-slides"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.19.1",
+    "@slidev/theme-default": "0.25.0",
+    "playwright-chromium": "^1.62.1"
+  }
+}

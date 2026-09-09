@@ -1,0 +1,64 @@
+:root {
+  --mcp-bg: #080b14;
+  --mcp-panel: #111827;
+  --mcp-ink: #f4f7ff;
+  --mcp-muted: #9ca9c5;
+  --mcp-violet: #9d7cff;
+  --mcp-blue: #3db7ff;
+  --mcp-green: #44d7a8;
+  --mcp-red: #ff6b7d;
+  --mcp-pink: #ff8ac6;
+  --mcp-line: #26324c;
+}
+
+html.dark, body, #app { background: var(--mcp-bg); }
+
+.slidev-layout {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(61, 183, 255, .10), transparent 28%),
+    radial-gradient(circle at 10% 90%, rgba(157, 124, 255, .08), transparent 28%),
+    var(--mcp-bg);
+  color: var(--mcp-ink);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  padding: 2.65rem 3.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.slidev-layout h1 { color: var(--mcp-ink); font-size: 2.35rem; line-height: 1.12; letter-spacing: -.035em; }
+.slidev-layout h2 { color: var(--mcp-ink); font-size: 1.72rem; }
+.slidev-layout h3 { font-size: 1.28rem; }
+.slidev-layout p, .slidev-layout li { color: #dce4f7; }
+.slidev-layout strong { color: #fff; }
+.slidev-layout a { color: var(--mcp-blue); }
+.slidev-layout code { font-family: "Cascadia Code", "JetBrains Mono", monospace; }
+.slidev-layout pre { border: 1px solid var(--mcp-line); box-shadow: 0 18px 60px rgba(0,0,0,.28); font-size: 1rem !important; line-height: 1.45; }
+.slidev-layout blockquote { border-left-color: var(--mcp-violet); background: rgba(157,124,255,.08); padding: 1rem 1.25rem; }
+.slidev-layout blockquote p { color: #fff; font-size: 1.35rem; line-height: 1.35; }
+
+.accent { color: var(--mcp-violet); }
+.blue { color: var(--mcp-blue); }
+.green { color: var(--mcp-green); }
+.red { color: var(--mcp-red); }
+.pink { color: var(--mcp-pink); }
+.muted { color: var(--mcp-muted); }
+.eyebrow { color: var(--mcp-blue); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; }
+.big-number { font-size: 7rem; font-weight: 800; line-height: .9; color: var(--mcp-violet); letter-spacing: -.08em; }
+.statement { font-size: 2.3rem; line-height: 1.18; font-weight: 650; letter-spacing: -.035em; max-width: 860px; }
+.question { font-size: 2.3rem; line-height: 1.25; font-weight: 600; max-width: 880px; }
+.code-caption { font-size: .72rem; color: var(--mcp-muted); margin-bottom: .35rem; text-transform: uppercase; letter-spacing: .1em; }
+.live-demo { display: inline-block; color: #06120f; background: var(--mcp-green); font-weight: 800; letter-spacing: .13em; padding: .35rem .65rem; border-radius: .25rem; font-size: .72rem; }
+.risk { color: var(--mcp-red); }
+.ok { color: var(--mcp-green); }
+.footer-note { position: absolute; bottom: 1.35rem; left: 4rem; color: var(--mcp-muted); font-size: .65rem; letter-spacing: .04em; }
+.slidev-layout table { width: 100%; font-size: 1rem; line-height: 1.35; }
+.slidev-layout th { color: var(--mcp-blue); border-color: var(--mcp-line); }
+.slidev-layout td { border-color: var(--mcp-line); }
+.slidev-layout .mermaid { background: transparent !important; }
+.architecture-slide .mermaid { display: flex; justify-content: center; }
+.architecture-slide .mermaid svg { width: 72% !important; height: auto !important; max-height: 500px; }
+.sequence-compact .mermaid { display: flex; justify-content: center; }
+.sequence-compact .mermaid svg { width: auto !important; height: auto !important; max-height: 400px; }
+.title-mark { width: 86px; height: 7px; background: linear-gradient(90deg, var(--mcp-violet), var(--mcp-blue)); margin-bottom: 1.25rem; }
+.title-sub { color: var(--mcp-muted); font-size: 1.5rem; margin-top: .8rem; }
+.fallback { background: #070a11; border: 1px solid var(--mcp-line); border-left: 4px solid var(--mcp-green); padding: 1rem 1.2rem; font-family: "Cascadia Code", monospace; font-size: .96rem; line-height: 1.5; white-space: pre-wrap; }

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "orders-demo": {
+      "type": "http",
+      "url": "http://localhost:5055/mcp",
+      "headers": {
+        "X-Api-Key": "demo-user-key"
+      },
+      "protocolEra": "modern"
+    }
+  }
+}
