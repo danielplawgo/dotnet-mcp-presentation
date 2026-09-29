@@ -1,6 +1,8 @@
-# MCP w .NET — Slidev talk starter
+# MCP w .NET: jak udostępnić aplikację agentom AI
 
-Kompletna, polskojęzyczna prezentacja techniczna oraz małe demo pokazujące, jak dodać MCP Server do aplikacji ASP.NET Core z CQRS bez przenoszenia logiki biznesowej do tools.
+Polskojęzyczna prezentacja techniczna ([Slidev](https://sli.dev/)) oraz małe demo pokazujące, jak dodać MCP Server do aplikacji ASP.NET Core z CQRS bez przenoszenia logiki biznesowej do tools.
+
+**Slajdy w PDF:** gotowy plik `mcp-dotnet-talk.pdf` znajdziesz w [Releases](https://github.com/danielplawgo/dotnet-mcp-presentation/releases/latest) — nie trzeba niczego instalować.
 
 ## Requirements
 
@@ -163,8 +165,7 @@ npm run export:png
 - Order `123`: `WaitingForPayment`, customer `C-001` / John Smith
 - Invoice `INV-123`: `Paid`, ale `ReminderStatus = Active`
 - Order `456`: `Shipped`
-
-- Order `789`: `WaitingForPayment`, pole `note` zawiera **celowo zatrutą treść** (patrz niżej)
+- Order `789`: `WaitingForPayment`, pole `note` zawiera **celowo zatrutą treść** (patrz [Prompt injection demo](#prompt-injection-demo))
 
 Store jest in-memory i **mutowalny**: `CancelOrder` trwale zmienia status zamówienia w uruchomionej instancji. Jeśli w trakcie prezentacji wywołasz `CancelOrder` na zamówieniu `123`, pytanie „Dlaczego zamówienie 123 nie zostało wysłane?" przestanie działać. Do wywołań na żywo używaj `456`, a stan resetuj restartem API.
 

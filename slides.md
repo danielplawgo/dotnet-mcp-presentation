@@ -3,7 +3,7 @@ theme: default
 title: "MCP w .NET: jak udostępnić aplikację agentom AI"
 info: |
   Praktyczna prezentacja o dodaniu serwera MCP do istniejącej aplikacji ASP.NET Core.
-author: ""
+author: "Daniel Plawgo"
 colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 1120
